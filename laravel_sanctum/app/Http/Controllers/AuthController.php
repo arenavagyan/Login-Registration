@@ -14,7 +14,7 @@ class AuthController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function issueToken(Request $request)
+    public function login(Request $request)
     {
         $request->validate([
             'email' => 'required|email',
